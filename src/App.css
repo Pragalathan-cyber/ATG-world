@@ -1,0 +1,132 @@
+.App{
+  overflow-x: hidden;
+}
+.search{
+  margin-top: -8px;
+  width: 360px;
+  height: 42px;
+  background-color:  #F2F2F2;
+}
+.search-icon{
+  height: 22px;
+  width: 22px;
+}
+.search-bar{
+  width: 100%;
+  background-color:  #F2F2F2;
+  outline: none;
+}
+.search:focus{
+  border: none;
+}
+.search-bar::placeholder{
+   padding-left: 10px;
+   font-weight: 500;
+   font-size: 15px;
+   color:#666464;
+}
+.emty-div{
+  height: 20px;
+  width: 100%;
+}
+.main{
+  position: relative;
+  top:-18.5rem;
+  margin:0 6rem 0 6rem ;
+}
+.main-head-ul{
+  list-style: none;
+  gap: 0 1rem;
+
+}
+.main-head-ul li{
+  cursor: pointer;
+}
+.main-head-ul li:hover{
+  color:black;
+  font-weight: 500;
+}
+.line{
+  position: relative;
+  bottom: 17px;
+  height: 1px;
+  width: 100%;
+  margin: 0 1.9rem;
+  z-index: 1;
+  background-color: #dcd9d9;
+}
+.post-image{
+  height: 320px;
+  width: 100%;
+}
+@media (max-width:1250px) and (min-width:520px) {
+  .img1,
+  .img2{
+     height: 410px !important;
+  }
+  .text{
+    bottom: 0% !important;
+    top:30.5%;
+  }
+  .main{
+    position: relative;
+    top:-23rem;
+    margin: 0;
+  }
+  .post-image{
+    height: 250px;
+    width: 100%;
+  }
+  
+}
+
+/* CSS for Small (sm) Screens (576px to 767.98px) */
+@media (max-width: 510.98px) {
+  /* Write your CSS rules here */
+  .img1,
+  .img2{
+     height: 310px !important;
+  }
+  .text{
+    bottom: 0% !important;
+    top:23.5%;
+  }
+  .main{
+    position: absolute;
+    top: 21rem;
+    margin: 0;
+  }
+  .post-image{
+    height: 220px;
+    width: 100%;
+  }
+  .post-p{
+    font-size: 14.5px;
+  }
+  .line{
+    top:2px;
+  }
+  .title-post{
+    font-size: 1.3rem;
+  }
+  .pfp{
+    height: 50px;
+  }
+  .pen-login{
+    position: fixed;
+    color: white;
+    background: rgb(255, 103, 128) ;
+    padding: 1rem;
+    bottom: 8rem;
+    right: 2rem;
+    z-index: 99;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .signup{
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    top: 2rem;
+    background-color: red;
+  }
+}
